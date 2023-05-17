@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Tech_Officer.EditTechOffice">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="Edit My Profile"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.089999974" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="345dp"
+            android:layout_height="550dp"
+            app:cardBackgroundColor="#D7EFEC27"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84000003">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="540dp">
+
+
+                <EditText
+                    android:id="@+id/Eid"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="25dp"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="Employee ID"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/Enic"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Employee NIC"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Eid"
+                    app:layout_constraintStart_toStartOf="@+id/Eid"
+                    app:layout_constraintTop_toBottomOf="@+id/Eid" />
+
+                <EditText
+                    android:id="@+id/Ename"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="2dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Enic"
+                    app:layout_constraintStart_toStartOf="@+id/Enic"
+                    app:layout_constraintTop_toBottomOf="@+id/Enic" />
+
+                <EditText
+                    android:id="@+id/Eaddress"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Ename"
+                    app:layout_constraintStart_toStartOf="@+id/Ename"
+                    app:layout_constraintTop_toBottomOf="@+id/Ename" />
+
+                <EditText
+                    android:id="@+id/Emobile"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Eaddress"
+                    app:layout_constraintStart_toStartOf="@+id/Eaddress"
+                    app:layout_constraintTop_toBottomOf="@+id/Eaddress" />
+
+                <EditText
+                    android:id="@+id/Epw"
+                    android:layout_width="310dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="8dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="@+id/Emobile"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/Emobile"
+                    app:layout_constraintTop_toBottomOf="@+id/Eposition" />
+
+                <Button
+                    android:id="@+id/Updatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="84dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#0F7A15"
+                    android:text="Update"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cancelbtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Epw"
+                    app:layout_constraintVertical_bias="0.428" />
+
+                <Button
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#7E3737"
+                    android:text="Cancel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Epw" />
+
+                <EditText
+                    android:id="@+id/Eposition"
+                    android:layout_width="302dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:hint="Position"
+                    android:inputType="textPersonName"
+                    app:layout_constraintStart_toStartOf="@+id/Emobile"
+                    app:layout_constraintTop_toBottomOf="@+id/Emobile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Office_Member.AddCustomerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="Add Employee"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="345dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#EFEC27"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="343dp"
+                android:layout_height="62dp">
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardView2"
+                    android:layout_width="271dp"
+                    android:layout_height="46dp"
+                    app:cardBackgroundColor="#E4E4C1"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.111"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.38">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/searchTxt"
+                            android:layout_width="241dp"
+                            android:layout_height="46dp"
+                            android:ems="10"
+                            android:hint="Search Employee EID"
+                            android:inputType="textPersonName"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.93"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="59dp"
+                    android:layout_height="63dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.981"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.523"
+                    app:srcCompat="@drawable/search" />
+
+                <Button
+                    android:id="@+id/searchIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="53dp"
+                    android:background="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.975"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.43"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="345dp"
+            android:layout_height="550dp"
+            app:cardBackgroundColor="#D7EFEC27"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84000003">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="540dp">
+
+
+                <EditText
+                    android:id="@+id/Eid"
+                    android:editable="false"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:hint="Employee ID"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/cancelbtn"
+                    app:layout_constraintStart_toStartOf="@+id/Registerbtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/Enic"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Employee NIC"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Eid"
+                    app:layout_constraintTop_toBottomOf="@+id/Eid" />
+
+                <EditText
+                    android:id="@+id/Ename"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="2dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Enic"
+                    app:layout_constraintTop_toBottomOf="@+id/Enic" />
+
+                <EditText
+                    android:id="@+id/Eaddress"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Ename"
+                    app:layout_constraintTop_toBottomOf="@+id/Ename" />
+
+                <EditText
+                    android:id="@+id/Emobile"
+                    android:layout_width="309dp"
+                    android:layout_height="58dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="@+id/Eaddress"
+                    app:layout_constraintTop_toBottomOf="@+id/Eaddress" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:id="@+id/coordinatorLayout"
+                    android:layout_width="309dp"
+                    android:layout_height="93dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/Eaddress"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emobile"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:hint="@string/select">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/Vtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <EditText
+                    android:id="@+id/Epw"
+                    android:layout_width="310dp"
+                    android:layout_height="64dp"
+                    android:editable="true"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="@+id/coordinatorLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout" />
+
+                <Button
+                    android:id="@+id/Registerbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Register"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Epw" />
+
+                <Button
+                    android:id="@+id/Updatebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#0F7A15"
+                    android:text="Update"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cancelbtn"
+                    app:layout_constraintStart_toEndOf="@+id/Registerbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/Epw" />
+
+                <Button
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#7E3737"
+                    android:text="Cancel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Epw" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

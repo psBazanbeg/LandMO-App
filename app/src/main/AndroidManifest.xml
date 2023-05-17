@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.landmoservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LandMoService"
+        tools:targetApi="31">
+        <activity
+            android:name=".Tech_Officer.EditTechOffice"
+            android:exported="false" />
+        <activity
+            android:name=".Tech_Officer.RepairDitails"
+            android:exported="false" />
+        <activity
+            android:name=".Tech_Officer.RHList"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.HRRSlist"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.HRRList"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.History"
+            android:exported="false" />
+        <activity
+            android:name=".editUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.AddEmployee"
+            android:exported="false" />
+        <activity
+            android:name=".AcceptedVeiwActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.Accept_Service"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.RRSlist"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.Accept_Repair"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.RRList"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tech_Officer.TechHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Office_Member.OfficeHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin_login.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcceptedVeiwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RSlist"
+            android:exported="false" />
+        <activity
+            android:name=".AddServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RList"
+            android:exported="false" />
+        <activity
+            android:name=".RepairRequestListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRepairActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
